@@ -1,43 +1,85 @@
-import React from "react";
-import { StyleSheet, View, Text } from "react-native";
-import MapView, { Marker } from "react-native-maps";
+import React, { useEffect, useState } from "react";
+import {
+  View,
+  ActivityIndicator,
+  Text,
+  ToastAndroid,
+  StyleSheet,
+} from "react-native";
+import { WebView } from "react-native-webview";
 import Header from "./Header";
+import IPAddress from "./IPAddress";
 
-const roomsData = [
-  {
-    id: 1,
-    name: "Classroom 3",
-    coordinate: { latitude: 19.01650809908107, longitude: 73.10456491423578 },
-  },
-  {
-    id: 2,
-    name: "Classroom 2",
-    coordinate: { latitude: 19.016542332739, longitude: 73.10447908354878 },
-  },
-  // Add more rooms as needed
-];
+const IndoorMapScreen = ({ route }) => {
+  const [htmlContent, setHtmlContent] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [errorMessage, setErrorMessage] = useState(null);
+  const { start, target } = route.params;
 
-const IndoorMapScreen = () => {
+  useEffect(() => {
+    async function fetchMapContent() {
+      try {
+        const response = await fetch(`${IPAddress()}/indoormap`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            start: start,
+            target: target,
+          }),
+        });
+        const data = await response.json();
+        if (data.message) {
+          setErrorMessage(data.message);
+        } else {
+          const mapHtml = data.map;
+          setHtmlContent(mapHtml);
+        }
+      } catch (error) {
+        console.error("Error fetching map content:", error);
+        ToastAndroid.show(
+          "Error fetching map content:",
+          error,
+          ToastAndroid.SHORT
+        );
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    fetchMapContent();
+  }, []);
+
+  if (loading) {
+    return (
+      <View style={styles.container}>
+        <Header title="MGM's Indoor Navigation Module" />
+        <View style={styles.loaderContainer}>
+          <ActivityIndicator size="large" color="#550003" />
+        </View>
+      </View>
+    );
+  }
+
+  if (errorMessage) {
+    return (
+      <View style={styles.container}>
+        <Header title="MGM's Indoor Navigation Module" />
+        <Text style={styles.messageText}>{errorMessage}</Text>
+      </View>
+    );
+  }
+
   return (
     <View style={styles.container}>
       <Header title="MGM's Indoor Navigation Module" />
-      <MapView
-        style={styles.map}
-        initialRegion={{
-          latitude: 19.016521294255057,
-          longitude: 73.10477637595811,
-          latitudeDelta: 0.001009,
-          longitudeDelta: 0.001009,
-        }}
-      >
-        {roomsData.map((room) => (
-          <Marker
-            key={room.id}
-            coordinate={room.coordinate}
-            title={room.name}
-          />
-        ))}
-      </MapView>
+      <WebView
+        source={{ html: htmlContent || undefined }}
+        style={{ flex: 1 }}
+        javaScriptEnabled={true}
+        domStorageEnabled={true}
+      />
     </View>
   );
 };
@@ -45,11 +87,18 @@ const IndoorMapScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#f5f5f5",
   },
-  map: {
+  loaderContainer: {
     flex: 1,
-    height: "100%",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  messageText: {
+    fontSize: 24,
+    fontWeight: "bold",
+    textAlign: "center",
+    marginTop: 20,
   },
 });
 

@@ -90,7 +90,7 @@ const DashboardScreen = () => {
         <TouchableOpacity
           onPress={() => {
             // Handle navigation to the Indoor Navigation Module
-            navigation.navigate("IndoorMap");
+            navigation.navigate("IndoorLocationSelection");
           }}
         >
           <View style={styles.cardContainer}>
@@ -107,6 +107,7 @@ const DashboardScreen = () => {
         <TouchableOpacity
           onPress={() => {
             // Handle navigation to the Seating Arrangment Module
+            navigation.navigate("Seating");
           }}
         >
           <View style={styles.cardContainer}>
@@ -118,22 +119,6 @@ const DashboardScreen = () => {
           </View>
           <View style={styles.linkButton}>
             <Text style={styles.linkText}>Seating Arrangment Module</Text>
-          </View>
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={() => {
-            // Handle navigation to the MGM's Community
-          }}
-        >
-          <View style={styles.cardContainer}>
-            <Text style={styles.underDevelopment}>Under Development</Text>
-            <Image
-              source={require("../assets/MGM_Community.jpg")}
-              style={styles.cardImage}
-            />
-          </View>
-          <View style={styles.linkButton}>
-            <Text style={styles.linkText}>MGM's Community</Text>
           </View>
         </TouchableOpacity>
       </View>

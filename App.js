@@ -12,6 +12,8 @@ import DashboardScreen from "./screens/DashboardScreen";
 import LocationSelectionScreen from "./screens/LocationSelectionScreen";
 import MapScreen from "./screens/MapScreen";
 import IndoorMapScreen from "./screens/IndoorMapScreen";
+import IndoorLocationSelectionScreen from "./screens/IndoorLocationSelectionScreen";
+import SeatingScreen from "./screens/SeatingScreen";
 
 const Stack = createStackNavigator();
 
@@ -120,11 +122,21 @@ export default function App() {
           component={LocationSelectionScreen}
           options={{ title: "Select Locations" }}
         />
+        <Stack.Screen
+          name="IndoorLocationSelection"
+          component={IndoorLocationSelectionScreen}
+          options={{ title: "Select Indoor Locations" }}
+        />
         <Stack.Screen name="Map" component={MapScreen} />
         <Stack.Screen
           name="IndoorMap"
           component={IndoorMapScreen}
           options={{ title: "Indoor Map" }}
+        />
+        <Stack.Screen
+          name="Seating"
+          component={SeatingScreen}
+          options={{ title: "Seating Arrangement" }}
         />
       </Stack.Navigator>
     </NavigationContainer>
