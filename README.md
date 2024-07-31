@@ -1,6 +1,6 @@
 # CampNavig Frontend
 
-Welcome to the frontend repository of CampNavig, a web application designed to make navigating campsites easy and intuitive. This project is built using modern web technologies to provide a seamless user experience.
+CampNavig is a campus navigation app designed specifically for MGM College of Engineering & Technology, Kamothe. The application aims to assist students and visitors in navigating the college campus efficiently. Developed as a final year project by Mr. Sumit Jaiswar and Mr. Harsh Kamble, the app integrates various technologies to provide a seamless and intuitive user experience.
 
 ## Table of Contents
 
@@ -14,44 +14,72 @@ Welcome to the frontend repository of CampNavig, a web application designed to m
 - [Contact](#contact)
 
 ## Screenshot
+- App Icon
+![CampNavig AppIcon](assets/AppIcon.jpg)
 
-![CampNavig Screenshot](screenshots/screenshot.png)
+- Login Page
+![CampNavig LoginPage](assets/LoginPage.jpg)
+
+- Signup Page
+![CampNavig AppIcon](assets/SignupPage.jpg)
+
+- Dashboard
+![CampNavig AppIcon](assets/Dashboard.jpg)
+
+- Select Locations
+![CampNavig AppIcon](assets/SelectLocation.jpg)
+
+- Map of Gate to Dental Building
+![CampNavig AppIcon](assets/GateToDental.jpg)
+
+- Map of Engineering Building to Ground Area 
+![CampNavig AppIcon](assets/EngToGround.jpg)
+
+- Map of Engineering Building to Prosthetics and Orthotics
+![CampNavig AppIcon](assets/EngToPros.jpg)
 
 ## Features
 
-- **User-friendly interface**: Easy to navigate and visually appealing.
-- **Responsive design**: Works on all devices - mobile, tablet, and desktop.
-- **Interactive maps**: Helps users find and navigate campsites.
-- **Real-time updates**: Stay updated with the latest campsite information.
+- **Interactive Maps**: Leveraging Folium, the app displays interactive maps that help users locate important landmarks and facilities on campus.
+- **Real-Time Navigation**: Users can find their way to different departments, hostels, and other essential locations with ease.
+- **User Authentication**: Secure login and user management are handled through Firebase Authentication.
+- **Dynamic Content**: The app features dynamic content updates from a real-time database, ensuring that users have the latest information.
 
 ## Technologies Used
 
-- **React**: JavaScript library for building user interfaces.
-- **Redux**: State management tool.
-- **React Router**: For routing and navigation.
-- **Axios**: For making HTTP requests.
-- **Tailwind CSS**: Utility-first CSS framework for styling.
-- **Mapbox GL JS**: For interactive maps.
+### Frontend
+- **React Native**: The mobile app is built using React Native, providing a native experience for both Android and iOS users.
+- **Expo**: Used for building, deploying, and managing the app.
+### Backend
+- **Flask**:  A lightweight web framework used to create the backend API.
+- **Flask-Bcrypt**: Used for secure password hashing and verification.
+- **Flask-CORS**: Enables Cross-Origin Resource Sharing for the Flask app.
+- **Folium**: A Python library used for creating interactive maps and location-based features.
+- **Folium Plugins**: Additional plugins for enhancing the map functionalities.
+- **secrets**: A Python module for generating secure tokens and secrets.
+### Authentication and Database
+- **Firebase**:  Used for user authentication and real-time database management. Firebase Admin SDK manages secure access to the Firebase services.
+- **Firebase Admin**: Handles administrative tasks like database access and authentication.
+### Environment and Configuration
+- **Python-dotenv**:  Used to load environment variables from a .env file for secure configuration management.
+
 
 ## Installation
 
-To get a local copy up and running, follow these simple steps:
-
-1. Clone the repository
+1. Go to this expo build link and click on the install button for installing this app
    ```sh
-   git clone https://github.com/SumitJ2002/CampNavig_Frontend.git
-2. Navigate to the project directory
-   ```sh
-   cd CampNavig_Frontend
-3. Install dependencies
-   ```sh
-   npm install
+   https://expo.dev/accounts/sumit2002/projects/campnavig/builds/ab0763af-5fd7-4362-b60e-9c4d3c6c6d2c
 
 ## Usage
-1. Start the development server
+1. Clone the project
    ```sh
-   npm start
-2. Open http://localhost:3000 to view it in your browser.
+   git clone https://github.com/SumitJ2002/CampNavig_Frontend
+2. Start the development server
+   ```sh
+   npx expo start
+3. Open the Expo Go app installed on your phone Scan the QR code
+4. Wait for the app to build on Expo Go
+5. App is ready to use on Expo Go
 
 ## Contributing
 
