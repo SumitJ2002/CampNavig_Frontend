@@ -18,24 +18,31 @@ CampNavig is a campus navigation app designed specifically for MGM College of En
 <img src="assets/AppIcon.jpg" alt="CampNavig AppIcon" width="300" height="auto">
 
 - Login Page
+<img src="assets/AppIcon.jpg" alt="CampNavig AppIcon" width="300" height="auto">
 ![CampNavig LoginPage](assets/LoginPage.jpg)
 
 - Signup Page
+<img src="assets/AppIcon.jpg" alt="CampNavig AppIcon" width="300" height="auto">
 ![CampNavig AppIcon](assets/SignupPage.jpg)
 
 - Dashboard
+<img src="assets/AppIcon.jpg" alt="CampNavig AppIcon" width="300" height="auto">
 ![CampNavig AppIcon](assets/Dashboard.jpg)
 
 - Select Locations
+<img src="assets/AppIcon.jpg" alt="CampNavig AppIcon" width="300" height="auto">
 ![CampNavig AppIcon](assets/SelectLocation.jpg)
 
 - Map of Gate to Dental Building
+<img src="assets/AppIcon.jpg" alt="CampNavig AppIcon" width="300" height="auto">
 ![CampNavig AppIcon](assets/GateToDental.jpg)
 
 - Map of Engineering Building to Ground Area 
+<img src="assets/AppIcon.jpg" alt="CampNavig AppIcon" width="300" height="auto">
 ![CampNavig AppIcon](assets/EngToGround.jpg)
 
 - Map of Engineering Building to Prosthetics and Orthotics
+<img src="assets/AppIcon.jpg" alt="CampNavig AppIcon" width="300" height="auto">
 ![CampNavig AppIcon](assets/EngToPros.jpg)
 
 ## Features
