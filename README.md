@@ -15,7 +15,7 @@ CampNavig is a campus navigation app designed specifically for MGM College of En
 
 ## Screenshot
 - App Icon
-![CampNavig AppIcon](assets/AppIcon.jpg)
+<img src="assets/AppIcon.jpg" alt="CampNavig AppIcon" width="300" height="auto">
 
 - Login Page
 ![CampNavig LoginPage](assets/LoginPage.jpg)
