@@ -16,42 +16,35 @@ CampNavig is a campus navigation app designed specifically for MGM College of En
 ## Screenshot
 - App Icon
   
-<img src="assets/AppIcon.jpg" alt="CampNavig AppIcon" width="300" height="auto">
+<img src="assets/AppIcon.jpg" alt="CampNavig AppIcon" width="100" height="auto">
 
 - Login Page
   
-<img src="assets/LoginPage.jpg" alt="CampNavig AppIcon" width="300" height="auto">
-![CampNavig LoginPage](assets/LoginPage.jpg)
+<img src="assets/LoginPage.jpg" alt="CampNavig AppIcon" width="200" height="auto">
 
 - Signup Page
   
-<img src="assets/SignupPage.jpg" alt="CampNavig AppIcon" width="300" height="auto">
-![CampNavig AppIcon](assets/SignupPage.jpg)
+<img src="assets/SignupPage.jpg" alt="CampNavig AppIcon" width="200" height="auto">
 
 - Dashboard
   
-<img src="assets/Dashboard.jpg" alt="CampNavig AppIcon" width="300" height="auto">
-![CampNavig AppIcon](assets/Dashboard.jpg)
+<img src="assets/Dashboard.jpg" alt="CampNavig AppIcon" width="200" height="auto">
 
 - Select Locations
   
-<img src="assets/SelectLocation.jpg" alt="CampNavig AppIcon" width="300" height="auto">
-![CampNavig AppIcon](assets/SelectLocation.jpg)
+<img src="assets/SelectLocation.jpg" alt="CampNavig AppIcon" width="200" height="auto">
 
 - Map of Gate to Dental Building
   
-<img src="assets/GateToDental.jpg" alt="CampNavig AppIcon" width="300" height="auto">
-![CampNavig AppIcon](assets/GateToDental.jpg)
+<img src="assets/GateToDental.jpg" alt="CampNavig AppIcon" width="200" height="auto">
 
 - Map of Engineering Building to Ground Area
   
-<img src="assets/EngToGround.jpg" alt="CampNavig AppIcon" width="300" height="auto">
-![CampNavig AppIcon](assets/EngToGround.jpg)
+<img src="assets/EngToGround.jpg" alt="CampNavig AppIcon" width="200" height="auto">
 
 - Map of Engineering Building to Prosthetics and Orthotics
   
-<img src="assets/EngToPros.jpg" alt="CampNavig AppIcon" width="300" height="auto">
-![CampNavig AppIcon](assets/EngToPros.jpg)
+<img src="assets/EngToPros.jpg" alt="CampNavig AppIcon" width="200" height="auto">
 
 ## Features
 
