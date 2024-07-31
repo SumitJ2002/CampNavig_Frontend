@@ -1,6 +1,6 @@
 # CampNavig Frontend
 
-CampNavig is a campus navigation app designed specifically for MGM College of Engineering & Technology, Kamothe. The application aims to assist students and visitors in navigating the college campus efficiently. Developed as a final year project by Mr. Sumit Jaiswar and Mr. Harsh Kamble, the app integrates various technologies to provide a seamless and intuitive user experience.
+CampNavig is a campus navigation app designed specifically for MGM College of Engineering & Technology, Kamothe. The application aims to assist students and visitors in navigating the college campus efficiently. Developed as a final year project by Mr. Sumit Jaiswar, the app integrates various technologies to provide a seamless and intuitive user experience.
 
 ## Table of Contents
 
